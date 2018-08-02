@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: PressStart;
+    src: url(../fonts/PressStart2P.ttf);
+}
+
+html { height: 100%; margin: 0; padding: 0;}
+
+body {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #393939;
+    color: #D8D8D8;
+    font-family: 'PressStart', sans-serif;
+
+    outline: none;
+    overflow: hidden;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.images {
+    display: inline-block;
+}
+
+#img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-repeat: no-repeat;
+    background-size: 512px 320px;
+    border: 2px solid #D8D8D8;
+    width: 512px;
+    height: 320px;
+    float: left;
+}
+
+#screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1152px;
+    height: 782px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-repeat: no-repeat;
+    background-size: 1152px 782px;
+    z-index: 10;
+}
+
+#compass {
+    position: relative;
+}
+
+#compass-main {
+    position: absolute;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-repeat: no-repeat;
+    background-size: 512px 240px;
+    background-image: url('../img/kompas.bmp');
+    width: 512px;
+    height: 240px;
+    float: left;
+    margin-top: 80px;
+    z-index: 1;
+    left: 600px;
+}
+
+.compass-letter {
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+#compass-north {
+    left: 832px;
+    top: 84px;
+    background-image: url('../img/N.bmp');
+}
+
+#compass-south {
+    left: 844px;
+    top: 292px;
+    background-image: url('../img/S.bmp');
+}
+
+#compass-west {
+    left: 632px;
+    top: 152px;
+    background-image: url('../img/W.bmp');
+}
+
+#compass-east {
+    left: 1060px;
+    top: 150px;
+    background-image: url('../img/E.bmp');
+}
+
+#container {
+    padding-top: 3%;
+    padding-left: 2%;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+#log {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.br {
+    display: block;
+    width: 100px;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tile p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#ui-container {
+    position: relative;
+    z-index: 100;
+}
+
+.tile {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    background-color: #444554;
+    background-position: 2px 60px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 150px;
+    height: 130px;
+    top: 0px;
+    left: 0px;
+    overflow-y: scroll;
+}
+
+.backpack {
+    color: blue;
+}
+
+.coords {
+    padding-bottom: 6px;
+}
+
+#ui-panel .big {
+    font-size: 26px;
+    padding-bottom: 4px;
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+#ui-panel {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    overflow-y: scroll;
+}
+
+#ui-panel2 {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    overflow-y: scroll;
+}
